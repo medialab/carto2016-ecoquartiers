@@ -33,7 +33,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Introduction</a></li>
+                <li class="active"><a href="/introduction.html">Introduction</a></li>
                 <li><a href="/label.html">Le label</a></li>
                 <li><a href="/certifications.html">Différentes certifications</a></li>
                 <li><a href="/pratiques.html">Pratiques de construction</a></li>
@@ -46,7 +46,7 @@
     </nav>
 
     <div class="cover">
-        <img src="http://lorempixel.com/1920/1200/city/" width="100" height="auto">
+        <img src="http://lorempixel.com/1920/1200/city/" width="100" height="auto" data-0="opacity:1" data-1000="opacity:0">
         <div class="container">
             <div class="row">
                 <h1 class="col-sm-8 col-md-6 col-lg-6 col-sm-offset-2 col-md-offset-3 col-lg-offset-3">Introduction</h1>
@@ -76,7 +76,16 @@
     <script src="/node_modules/jquery.easing/jquery.easing.min.js"></script>
     <script src="/node_modules/tether/dist/js/tether.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/skrollr/dist/skrollr.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script>
+        $(function () {
+            $('.cover img').delay(1000).animate({'opacity': 1}, 2000, function () {
+                skrollr.init();
+            });
+        })
+    </script>
   </body>
 </html>

@@ -33,7 +33,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="#">Introduction</a></li>
+                <li><a href="/introduction.html">Introduction</a></li>
                 <li><a href="/label.html">Le label</a></li>
                 <li><a href="/certifications.html">Différentes certifications</a></li>
                 <li class="active"><a href="/pratiques.html">Pratiques de construction</a></li>
@@ -96,5 +96,11 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script>
+        $(function () {
+            $('.cover img').delay(1000).animate({'opacity': 1}, 2000);
+        })
+    </script>
   </body>
 </html>
