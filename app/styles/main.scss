@@ -108,3 +108,22 @@ nav {
     opacity: 0;
   }
 }
+
+.mini-nav {
+  ul, li {
+    list-style: none;
+  }
+
+  position: fixed;
+  top: calc(100vh - 400px);
+  z-index: 10;
+
+  li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    padding-bottom: 1em;
+  }
+}
