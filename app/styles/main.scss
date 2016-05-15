@@ -5,8 +5,8 @@ $icon-font-path: '../fonts/';
 // endbower
 
 html, body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: light;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: light !important;
 }
 
 body {
@@ -48,7 +48,7 @@ blockquote {
 }
 
 main {
-  margin-top: calc(100vh - 175px);
+  margin-top: calc(100vh - 265px);
   width: 100vw;
   height: 100%;
   background: white;
@@ -63,10 +63,10 @@ main {
 .cover {
   position: fixed;
   z-index: 0;
-  top: 0;
+  top: -5vh;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 1000px;
   overflow: hidden;
   background-color: white;
 
