@@ -33,6 +33,90 @@ html, body {
   }
 }
 
+.ecomenu {
+  margin-top: -70px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  background: white;
+
+  .title {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .images {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    .image {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .home { background: url(../images/menu/home.jpg) no-repeat bottom center; }
+    .certifications { background: url(../images/menu/certifications.jpg) no-repeat bottom center; }
+    .dunkerque { background: url(../images/menu/dunkerque.jpg) no-repeat bottom center; }
+    .habiter { background: url(../images/menu/habiter.jpg) no-repeat bottom center; }
+    .construire { background: url(../images/menu/home.jpg) no-repeat bottom center; }
+    .ecolabel { background: url(../images/menu/home.jpg) no-repeat bottom center; }
+  }
+
+  .actions {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    .action {
+      content: ' ';
+      display: block;
+      position: absolute;
+      cursor: pointer;
+
+      &.certifications {
+        top: 30%;
+        left: 14%;
+        width: 400px;
+        height: 100%;
+        background: transparent;
+      }
+
+      &.dunkerque {
+        top: 3%;
+        left: 52%;
+        width: 330px;
+        height: 100%;
+        background: transparent;
+      }
+
+      &.habiter {
+        top: 4%;
+        left: 37%;
+        width: 230px;
+        height: 100%;
+        background: transparent;
+      }
+
+      &.ecolabel {
+        top: 4%;
+        left: 70.5%;
+        width: 270px;
+        height: 100%;
+        background: transparent;
+      }
+    }
+  }
+}
+
 body {
   overflow-x: hidden;
   padding-top: 70px;
