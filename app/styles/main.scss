@@ -9,13 +9,37 @@ html, body {
   font-weight: light !important;
 }
 
+.intro {
+  margin-top: -70px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/intro.jpg) no-repeat bottom center;
+
+  h1 {
+    font-size: 44px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 0.5em;
+  }
+
+  .opening {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5em 2em;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-top: -5em;
+    margin-bottom: 2em;
+  }
+}
+
 body {
   overflow-x: hidden;
   padding-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Hind', sans-serif;
+  font-family: 'Libre+Baskerville', serif;
   font-weight: 300;
 }
 
